@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerNest — Final Quality Assurance Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f4f7f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #3b82f6;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #1e293b;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #f8fafc;
+            color: #64748b;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+        .severity-critical { color: #ef4444; font-weight: bold; }
+        .severity-high { color: #f97316; font-weight: bold; }
+        .severity-medium { color: #eab308; font-weight: bold; }
+        .status-fixed { color: #10b981; font-weight: bold; }
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .checklist li::before {
+            content: '✅';
+            margin-right: 10px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #64748b;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+        @media print {
+            body { background-color: #fff; padding: 0; }
+            .container { box-shadow: none; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CareerNest — Final QA & Bug Report</h1>
+        <p><strong>Date:</strong> April 30, 2026 | <strong>Status:</strong> STABLE / PRODUCTION READY</p>
+
+        <h2>1. Infrastructure & Backend</h2>
+        <p>Fixed critical proxy communication errors (502 Bad Gateway) and deprecated Mongoose API calls.</p>
+
+        <h2>2. Functional Improvements</h2>
+        <p>Implemented real-time job filtering and fixed the missing search interface on the dashboard.</p>
+
+        <h2>3. Full Bug Log & Status Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Issue Description</th>
+                    <th>Severity</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>BUG-21</td><td>Backend 502 Bad Gateway Error</td><td class="severity-critical">CRITICAL</td><td class="status-fixed">FIXED</td></tr>
+                <tr><td>BUG-22</td><td>Job Search not filtering results</td><td class="severity-high">HIGH</td><td class="status-fixed">FIXED</td></tr>
+                <tr><td>BUG-09</td><td>Recruiter API called for Seekers (403)</td><td class="severity-critical">CRITICAL</td><td class="status-fixed">FIXED</td></tr>
+                <tr><td>BUG-23</td><td>Hindi option unreadable (Low Contrast)</td><td class="severity-medium">MEDIUM</td><td class="status-fixed">FIXED</td></tr>
+                <tr><td>BUG-24</td><td>Login button requires scrolling</td><td class="severity-medium">MEDIUM</td><td class="status-fixed">FIXED</td></tr>
+                <tr><td>BUG-25</td><td>Empty routes for About/Contact</td><td class="severity-medium">MEDIUM</td><td class="status-fixed">FIXED</td></tr>
+                <tr><td>BUG-16</td><td>Search bar UI missing from Dashboard</td><td class="severity-high">HIGH</td><td class="status-fixed">FIXED</td></tr>
+                <tr><td>BUG-13</td><td>Job deletion failing (Deprecated API)</td><td class="severity-high">HIGH</td><td class="status-fixed">FIXED</td></tr>
+                <tr><td>BUG-14</td><td>Dashboard tab bar overflow</td><td class="severity-critical">CRITICAL</td><td class="status-fixed">FIXED</td></tr>
+                <tr><td>BUG-03</td><td>Auth blocked by email verification</td><td class="severity-high">HIGH</td><td class="status-fixed">FIXED</td></tr>
+            </tbody>
+        </table>
+
+        <h2>4. Verification Checklist</h2>
+        <ul class="checklist">
+            <li><strong>Auth Check:</strong> Login/Logout flow is seamless for both roles.</li>
+            <li><strong>Search Check:</strong> Results filter correctly based on title and skills.</li>
+            <li><strong>Language Check:</strong> English and Hindi transitions are flawless.</li>
+            <li><strong>Responsive Check:</strong> All dashboards work on mobile/tablet viewports.</li>
+            <li><strong>Connectivity Check:</strong> Frontend-Backend communication is 100% stable.</li>
+        </ul>
+
+        <div class="footer">
+            Generated by CareerNest AI Quality Assurance Engine
+        </div>
+    </div>
+</body>
+</html>
